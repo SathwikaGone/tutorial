@@ -1,6 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 
 export default function funcComp() {
+  // const [state, setState] = useState({ name: "", gotData: "" });
+  // or
+  // const [name, setName] = useState("");
+
   return (
     <div>
       <h2> functional Component:</h2>

@@ -4,6 +4,7 @@ import Child from "./Child";
 export default class Parent extends Component {
   state = {
     gotData: "",
+    nameN: "Rakesh",
   };
   gotData = (input) => {
     this.setState({ gotData: input });
@@ -15,7 +16,8 @@ export default class Parent extends Component {
         <p> child - parent "callbacks"</p>
         <p>this is parent</p>
         {this.state.gotData ? this.state.gotData : null}
-        <Child name="Rakesh" sendDataToParent={this.gotData} />
+
+        <Child name={this.state.nameN} sendDataToParent={this.gotData} />
       </div>
     );
   }
