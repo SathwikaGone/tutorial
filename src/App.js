@@ -8,7 +8,7 @@ import ConditionalRender from "./components/conditionalRender";
 function App() {
   return (
     <div className="App">
-      <ConditionalRender />
+      <ClassComp />
     </div>
   );
 }
